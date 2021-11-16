@@ -4,17 +4,18 @@ import 'package:genfarm_appp/cus_wids/image_cus_wid.dart';
 import 'package:genfarm_appp/cus_wids/info_list_wid.dart';
 import 'package:genfarm_appp/cus_wids/navigation_bar_wid.dart';
 import 'package:genfarm_appp/cus_wids/text_cus_wid.dart';
+import 'package:genfarm_appp/routes/navigation_service.dart';
 import 'package:genfarm_appp/routes/routes.dart';
 
 import '../../constants.dart';
 
-class Ata36SupplyScreen extends StatelessWidget {
-  const Ata36SupplyScreen({Key? key}) : super(key: key);
+class Ata36EngineBleedScreen extends StatelessWidget {
+  const Ata36EngineBleedScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBarCus(context, title: '36 - Suplly'),
+      appBar: buildAppBarCus(context, title: '36 - Engine Bleed'),
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
@@ -22,7 +23,7 @@ class Ata36SupplyScreen extends StatelessWidget {
         child: Column(
           children: [
             ImageCusWid(
-              url: "assets/images/ata_36/ata36_presentation.png",
+              url: "assets/images/ata_36/ata36_enginebleed.png",
             ),
             InfoListWid(
               children: [
@@ -44,12 +45,15 @@ class Ata36SupplyScreen extends StatelessWidget {
                         'The APU can also be used for bleed air supply. This is usually done on the ground for air conditioning and for engine start.'),
                 CusText(
                     text:
-                        'However, APU BLEED air could also be used in flight, depending on altitude. The APU bleed supply is connected to the left side of the crossbleed duct.')
+                        'However, APU BLEED air could also be used in flight, depending on altitude. The APU bleed supply is connected to the left side of the crossbleed duct.'),
+                CusText(
+                    text:
+                        'On the ground, a HP ground power unit can be connected to the left side pneumatic system. The right side may be supplied by opening the crossbleed valve.'),
               ],
             ),
-            NavigationBarWid(
-              route: Routes.ata_36_supply,
-            )
+            NavigationBarWid(route: () {
+              NavigationService.push(Routes.ata36_leakdetection);
+            })
           ],
         ),
       ),

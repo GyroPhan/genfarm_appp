@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.genfarm_appp">
    <application
-        android:label="genfarm_appp"
+        android:label="GEN FAM"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

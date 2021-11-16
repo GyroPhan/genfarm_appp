@@ -1,51 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:genfarm_appp/routes/navigation_service.dart';
 
-import '../constants.dart';
-
 class NavigationBarWid extends StatelessWidget {
   const NavigationBarWid({
     Key? key,
     required this.route,
   }) : super(key: key);
-  final String route;
+  final Function() route;
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Expanded(
               child: GestureDetector(
             onTap: () {
               Navigator.pop(context);
             },
-            child: Container(
-              margin: EdgeInsets.all(kConstPadding),
-              decoration: BoxDecoration(
-                  color: Colors.red,
-                  border: Border.all(color: Colors.white, width: 2),
-                  borderRadius: BorderRadius.circular(kConstPadding * 2)),
-              child: Icon(
-                Icons.arrow_left,
-                size: 80,
-              ),
+            child: Image.asset(
+              'assets/icons/back.png',
+              color: Color(0xffff5a5f),
             ),
           )),
           Expanded(
               child: GestureDetector(
-            onTap: () {
-              NavigationService.push(route);
-            },
-            child: Container(
-              margin: EdgeInsets.all(kConstPadding),
-              decoration: BoxDecoration(
-                  color: Colors.green,
-                  border: Border.all(color: Colors.white, width: 2),
-                  borderRadius: BorderRadius.circular(kConstPadding * 2)),
-              child: Icon(
-                Icons.arrow_right,
-                size: 80,
-              ),
+            onTap: route,
+            child: Image.asset(
+              'assets/icons/next.png',
+              color: Color(0xffdce364),
             ),
           )),
         ],

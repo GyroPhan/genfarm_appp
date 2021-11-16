@@ -3,20 +3,14 @@ import 'package:genfarm_appp/constants.dart';
 import 'package:genfarm_appp/cus_wids/appbar_cus_wid.dart';
 import 'package:genfarm_appp/cus_wids/image_cus_wid.dart';
 import 'package:genfarm_appp/cus_wids/info_list_wid.dart';
+
 import 'package:genfarm_appp/cus_wids/navigation_bar_wid.dart';
 import 'package:genfarm_appp/cus_wids/text_cus_wid.dart';
 import 'package:genfarm_appp/routes/navigation_service.dart';
 import 'package:genfarm_appp/routes/routes.dart';
 
-class Ata36PresentationScreen extends StatefulWidget {
+class Ata36PresentationScreen extends StatelessWidget {
   const Ata36PresentationScreen({Key? key}) : super(key: key);
-
-  @override
-  _Ata36PresentationScreenState createState() =>
-      _Ata36PresentationScreenState();
-}
-
-class _Ata36PresentationScreenState extends State<Ata36PresentationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +43,9 @@ class _Ata36PresentationScreenState extends State<Ata36PresentationScreen> {
               ],
             ),
             NavigationBarWid(
-              route: Routes.ata_36_supply,
+              route: () {
+                NavigationService.push(Routes.ata36_enginebleed);
+              },
             )
           ],
         ),

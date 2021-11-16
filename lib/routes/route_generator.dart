@@ -2,9 +2,15 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:genfarm_appp/routes/routes.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_home_screen.dart';
-import 'package:genfarm_appp/screens/ata36/ata_36_presentation_screen.dart';
-import 'package:genfarm_appp/screens/ata36/ata_36_home_screen.dart';
-import 'package:genfarm_appp/screens/ata36/ata_36_supply_screen.dart';
+import 'package:genfarm_appp/screens/ata36/ata36_mcdu_screen.dart';
+import 'package:genfarm_appp/screens/ata36/ata36_controlpanel_screen.dart';
+import 'package:genfarm_appp/screens/ata36/ata36_ecam_screen.dart';
+import 'package:genfarm_appp/screens/ata36/ata36_leak_detection_screen.dart';
+import 'package:genfarm_appp/screens/ata36/ata36_other_comp_loca_screen.dart';
+import 'package:genfarm_appp/screens/ata36/ata36_presentation_screen.dart';
+import 'package:genfarm_appp/screens/ata36/ata36_home_screen.dart';
+import 'package:genfarm_appp/screens/ata36/ata36_enginebleed_screen.dart';
+import 'package:genfarm_appp/screens/ata36/ata36_pressure_regu_comp_loca_screen.dart';
 import 'package:genfarm_appp/screens/ata_menu_screen.dart';
 import 'package:genfarm_appp/screens/dic_menu_screen.dart';
 import 'package:genfarm_appp/screens/home_screen.dart';
@@ -40,14 +46,29 @@ Route<Object>? generateRoute(RouteSettings settings) {
       return _buildRoute(settings: settings, screen: DicMenuScreen());
 
 //--ATA 36--
-    case Routes.ata_36_home:
+    case Routes.ata36_home:
       return _buildRoute(settings: settings, screen: Ata36HomeScreen());
-    case Routes.ata_36_presentation:
+    case Routes.ata36_presentation:
       return _buildRoute(settings: settings, screen: Ata36PresentationScreen());
-    case Routes.ata_36_supply:
-      return _buildRoute(settings: settings, screen: Ata36SupplyScreen());
+    case Routes.ata36_enginebleed:
+      return _buildRoute(settings: settings, screen: Ata36EngineBleedScreen());
+    case Routes.ata36_leakdetection:
+      return _buildRoute(
+          settings: settings, screen: Ata36LeakDetectionScreen());
+    case Routes.ata36_controlpanel:
+      return _buildRoute(settings: settings, screen: Ata36ControlPanelScreen());
+    case Routes.ata36_ecam:
+      return _buildRoute(settings: settings, screen: Ata36EcamSceen());
+    case Routes.ata36_mcdu:
+      return _buildRoute(settings: settings, screen: Ata36McduScreen());
+    case Routes.ata36_pressureregucomploca:
+      return _buildRoute(
+          settings: settings, screen: Ata36PressureReguCompLocaScreen());
+    case Routes.ata36_othercomploca:
+      return _buildRoute(
+          settings: settings, screen: Ata36OtherCompLocaScreen());
 //--ATA 21--
-    case Routes.ata_21_home:
+    case Routes.ata21_home:
       return _buildRoute(settings: settings, screen: Ata21HomeScreen());
 //-----------
     default:

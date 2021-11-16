@@ -13,13 +13,13 @@ class CusText extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       child: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.all(kConstPadding * 2),
-          child: Text(
-            text,
-            style:
-                TextStyle(fontWeight: FontWeight.w500, fontSize: 20, height: 2),
-          ),
+        child: Text(
+          text,
+          style: TextStyle(
+              fontWeight: FontWeight.w500,
+              fontSize: 20,
+              height: 2,
+              color: Colors.white),
         ),
       ),
     );

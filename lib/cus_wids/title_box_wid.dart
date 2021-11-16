@@ -15,23 +15,22 @@ class TitleBoxWid extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Padding(
+      child: Container(
+        width: width,
+        height: 60,
         padding: EdgeInsets.all(kConstPadding),
-        child: Container(
-          width: width * .8,
-          height: 60,
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-              color: kBoxColor,
-              borderRadius: BorderRadius.circular(kConstPadding),
-              border: Border.all(color: Colors.blueAccent, width: 2)),
-          child: Text(
-            title,
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-            ),
+        margin: EdgeInsets.all(kConstPadding),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+            color: kBoxColor,
+            borderRadius: BorderRadius.circular(kConstPadding),
+            border: Border.all(color: Colors.blueAccent, width: 2)),
+        child: Text(
+          title,
+          overflow: TextOverflow.ellipsis,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
           ),
         ),
       ),

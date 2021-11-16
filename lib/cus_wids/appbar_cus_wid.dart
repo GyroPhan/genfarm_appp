@@ -8,11 +8,11 @@ AppBar buildAppBarCus(BuildContext context, {required String title}) {
   return AppBar(
     leading: GestureDetector(
       onTap: () {
-        Navigator.pop(context);
+        NavigationService.push(Routes.home, replace: true, clean: true);
       },
       child: Container(
           margin: EdgeInsets.all(kConstPadding),
-          child: Image.asset('assets/icons/back.png', fit: BoxFit.fitHeight)),
+          child: Image.asset('assets/icons/menu.png', fit: BoxFit.fitHeight)),
     ),
     elevation: 0,
     title: Text(
@@ -24,9 +24,7 @@ AppBar buildAppBarCus(BuildContext context, {required String title}) {
     backgroundColor: Color(0xff0492c2),
     actions: [
       GestureDetector(
-          onTap: () {
-            NavigationService.push(Routes.home, replace: true, clean: true);
-          },
+          onTap: () {},
           child: Container(
             margin: EdgeInsets.all(kConstPadding),
             child: Image.asset('assets/icons/menu.png'),
