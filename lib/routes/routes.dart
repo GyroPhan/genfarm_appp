@@ -45,4 +45,10 @@ class Routes {
       '/ata21_vent_cargo_controlpanel';
   static const String ata21_vent_cargo_fwdloca = '/ata21_vent_cargo_fwdloca';
   static const String ata21_vent_cargo_aftloca = '/ata21_vent_cargo_aftloca';
+  static const String ata21_press_menu = '/ata21_press_menu';
+  static const String ata21_press_present = '/ata21_press_present';
+  static const String ata21_press_controlpanel = '/ata21_press_controlpanel';
+  static const String ata21_press_ecam = '/ata21_press_ecam';
+  static const String ata21_press_mcdu = '/ata21_press_mcdu';
+  static const String ata21_press_loca = '/ata21_press_loca';
 }

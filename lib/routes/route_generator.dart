@@ -10,6 +10,12 @@ import 'package:genfarm_appp/screens/ata21/ata21_home_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_aircondi_pack_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_aircondi_packcontrolpanel_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_aircondi_present_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_press_controlpanel_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_press_ecam_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_press_loca_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_press_mcdu_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_press_menu_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_press_present_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_vent_cargo_aftloca_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_vent_cargo_controlpanel_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_vent_cargo_ecam_screen.dart';
@@ -153,6 +159,19 @@ Route<Object>? generateRoute(RouteSettings settings) {
     case Routes.ata21_vent_cargo_aftloca:
       return _buildRoute(
           settings: settings, screen: Ata21VentCargoAftLocaScreen());
+    case Routes.ata21_press_menu:
+      return _buildRoute(settings: settings, screen: Ata21PressMenuScreen());
+    case Routes.ata21_press_present:
+      return _buildRoute(settings: settings, screen: Ata21PressPresentScreen());
+    case Routes.ata21_press_controlpanel:
+      return _buildRoute(
+          settings: settings, screen: Ata21PressControlPanelScreen());
+    case Routes.ata21_press_ecam:
+      return _buildRoute(settings: settings, screen: Ata21PressEcamScreen());
+    case Routes.ata21_press_mcdu:
+      return _buildRoute(settings: settings, screen: Ata21PressMcduScreen());
+    case Routes.ata21_press_loca:
+      return _buildRoute(settings: settings, screen: Ata21PressLocaScreen());
 //-----------
     default:
       return _errorRoute();

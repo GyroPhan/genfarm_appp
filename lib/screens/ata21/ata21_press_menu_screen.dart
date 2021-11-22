@@ -6,20 +6,15 @@ import 'package:genfarm_appp/routes/routes.dart';
 
 import '../../constants.dart';
 
-class Ata21HomeScreen extends StatefulWidget {
-  const Ata21HomeScreen({Key? key}) : super(key: key);
+class Ata21PressMenuScreen extends StatelessWidget {
+  const Ata21PressMenuScreen({Key? key}) : super(key: key);
 
-  @override
-  _Ata21HomeScreenState createState() => _Ata21HomeScreenState();
-}
-
-class _Ata21HomeScreenState extends State<Ata21HomeScreen> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
-      appBar: buildAppBarCus(context, title: 'AIR CONDITION'),
+      appBar: buildAppBarCus(context, title: 'PRESSURIZE'),
       body: Container(
           width: width,
           height: height,
@@ -28,23 +23,23 @@ class _Ata21HomeScreenState extends State<Ata21HomeScreen> {
             children: [
               TitleBoxWid(
                 width: width,
-                title: 'AIR CONDITIONING',
+                title: 'PRESENTATION',
                 onTap: () {
-                  NavigationService.push(Routes.ata21_aircondi_menu);
+                  NavigationService.push(Routes.ata21_press_present);
                 },
               ),
               TitleBoxWid(
                 width: width,
-                title: 'VENTILATION',
+                title: 'CONTROL & INDICATING',
                 onTap: () {
-                  NavigationService.push(Routes.ata21_vent_menu);
+                  NavigationService.push(Routes.ata21_press_controlpanel);
                 },
               ),
               TitleBoxWid(
                 width: width,
-                title: 'PRESSURIZE',
+                title: 'COMPONENT LOCATION',
                 onTap: () {
-                  NavigationService.push(Routes.ata21_press_menu);
+                  NavigationService.push(Routes.ata21_press_loca);
                 },
               ),
             ],
