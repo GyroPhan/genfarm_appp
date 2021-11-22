@@ -15,6 +15,34 @@ class Routes {
   static const String ata36_pressureregucomploca =
       '/ata36_pressureregucomploca';
   static const String ata36_othercomploca = '/ata36_othercomploca';
+
   //--ATA 21--
   static const String ata21_home = '/ata21_home';
+  static const String ata21_aircondi_menu = '/ata21_aircondi_menu';
+  static const String ata21_aircondi_present = '/ata21_aircondi_present';
+  static const String ata21_aircondi_airflow = '/ata21_aircondi_airflow';
+  static const String ata21_aircondi_pack = '/ata21_aircondi_pack';
+  static const String ata21_aircondi_zonetempregusyst =
+      '/ata21_aircondi_zonetempregusyst';
+  static const String ata21_aircondi_zonetempregusystenhan =
+      '/ata21_aircondi_zonetempregusystenhan';
+  static const String ata21_aircondi_packcontrolpanel =
+      '/ata21_aircondi_packcontrolpanel';
+  static const String ata21_aircondi_ecam = '/ata21_aircondi_ecam';
+  static const String ata21_aircondi_mcdu = '/ata21_aircondi_mcdu';
+  static const String ata21_aircondi_loca = '/ata21_aircondi_loca';
+  static const String ata21_vent_menu = '/ata21_vent_menu';
+  static const String ata21_vent_present = '/ata21_vent_present';
+  static const String ata21_vent_lavagallley = '/ata21_vent_lavagallley';
+  static const String ata21_vent_controlpanel = '/ata21_vent_controlpanel';
+  static const String ata21_vent_ecam = '/ata21_vent_ecam';
+  static const String ata21_vent_mcdu = '/ata21_vent_mcdu';
+  static const String ata21_vent_loca = '/ata21_vent_loca';
+  static const String ata21_vent_cargo_present = '/ata21_vent_cargo_present';
+  static const String ata21_vent_cargo_mcdu = '/ata21_vent_cargo_mcdu';
+  static const String ata21_vent_cargo_ecam = '/ata21_vent_cargo_ecam';
+  static const String ata21_vent_cargo_controlpanel =
+      '/ata21_vent_cargo_controlpanel';
+  static const String ata21_vent_cargo_fwdloca = '/ata21_vent_cargo_fwdloca';
+  static const String ata21_vent_cargo_aftloca = '/ata21_vent_cargo_aftloca';
 }

@@ -1,7 +1,30 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:genfarm_appp/routes/routes.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_aircondi_loca_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_aircondi_mcdu_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_aircondi_menu_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_aircondi_airflow_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_aircondi_ecamtemp_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_home_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_aircondi_pack_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_aircondi_packcontrolpanel_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_aircondi_present_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_vent_cargo_aftloca_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_vent_cargo_controlpanel_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_vent_cargo_ecam_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_vent_cargo_fwdloca_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_vent_cargo_mcdu_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_vent_cargo_present_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_vent_controlpanel_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_vent_ecam.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_vent_lavagalley_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_vent_loca_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_vent_mcdu_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_vent_menu_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_vent_present_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_aircondi_zonetempregusyst_screen.dart';
+import 'package:genfarm_appp/screens/ata21/ata21_aircondi_zonetempregusystenhan_screen.dart';
 import 'package:genfarm_appp/screens/ata36/ata36_mcdu_screen.dart';
 import 'package:genfarm_appp/screens/ata36/ata36_controlpanel_screen.dart';
 import 'package:genfarm_appp/screens/ata36/ata36_ecam_screen.dart';
@@ -70,6 +93,66 @@ Route<Object>? generateRoute(RouteSettings settings) {
 //--ATA 21--
     case Routes.ata21_home:
       return _buildRoute(settings: settings, screen: Ata21HomeScreen());
+    case Routes.ata21_aircondi_menu:
+      return _buildRoute(settings: settings, screen: Ata21AirCondiMenuScreen());
+    case Routes.ata21_aircondi_present:
+      return _buildRoute(
+          settings: settings, screen: Ata21AirCondiPresentScreen());
+    case Routes.ata21_aircondi_airflow:
+      return _buildRoute(
+          settings: settings, screen: Ata21AirCondiAirFlowScreen());
+    case Routes.ata21_aircondi_pack:
+      return _buildRoute(settings: settings, screen: Ata21AirCondiPackScreen());
+    case Routes.ata21_aircondi_zonetempregusyst:
+      return _buildRoute(
+          settings: settings, screen: Ata21AirCondiZoneTempReguSystScreen());
+    case Routes.ata21_aircondi_zonetempregusystenhan:
+      return _buildRoute(
+          settings: settings,
+          screen: Ata21AirCondiZoneTempReguSystEnhanScreen());
+    case Routes.ata21_aircondi_packcontrolpanel:
+      return _buildRoute(
+          settings: settings, screen: Ata21AirCondiPackControlPanelScreen());
+    case Routes.ata21_aircondi_ecam:
+      return _buildRoute(settings: settings, screen: Ata21AirCondiEcamScreen());
+    case Routes.ata21_aircondi_mcdu:
+      return _buildRoute(settings: settings, screen: Ata21AirCondiMcduScreen());
+    case Routes.ata21_aircondi_loca:
+      return _buildRoute(settings: settings, screen: Ata21AirCondiLocaScreen());
+    case Routes.ata21_vent_menu:
+      return _buildRoute(settings: settings, screen: Ata21VentMenuScreen());
+    case Routes.ata21_vent_present:
+      return _buildRoute(settings: settings, screen: Ata21VentPresentScreen());
+    case Routes.ata21_vent_lavagallley:
+      return _buildRoute(
+          settings: settings, screen: Ata21VentLavaGalleyScreen());
+    case Routes.ata21_vent_controlpanel:
+      return _buildRoute(
+          settings: settings, screen: Ata21VentControlPanelScreen());
+    case Routes.ata21_vent_ecam:
+      return _buildRoute(settings: settings, screen: Ata21VentEcamScreen());
+    case Routes.ata21_vent_mcdu:
+      return _buildRoute(settings: settings, screen: Ata21VentMcduScreen());
+    case Routes.ata21_vent_loca:
+      return _buildRoute(settings: settings, screen: Ata21VentLocaScreen());
+    case Routes.ata21_vent_cargo_present:
+      return _buildRoute(
+          settings: settings, screen: Ata21VentCargoPresentScreen());
+    case Routes.ata21_vent_cargo_controlpanel:
+      return _buildRoute(
+          settings: settings, screen: Ata21VentCargoControlPanelScreen());
+    case Routes.ata21_vent_cargo_ecam:
+      return _buildRoute(
+          settings: settings, screen: Ata21VentCargoEcamScreen());
+    case Routes.ata21_vent_cargo_mcdu:
+      return _buildRoute(
+          settings: settings, screen: Ata21VentCargoMcduScreen());
+    case Routes.ata21_vent_cargo_fwdloca:
+      return _buildRoute(
+          settings: settings, screen: Ata21VentCargoFwdLocaScreen());
+    case Routes.ata21_vent_cargo_aftloca:
+      return _buildRoute(
+          settings: settings, screen: Ata21VentCargoAftLocaScreen());
 //-----------
     default:
       return _errorRoute();
