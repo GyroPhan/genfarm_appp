@@ -1,9 +1,11 @@
 class Routes {
   static const String root = '/';
   static const String home = '/home';
+
   //--TOTAL MENU --
   static const String ata_menu = '/ata_menu';
   static const String dic_menu = '/dic_menu';
+
   //--ATA 36--
   static const String ata36_home = '/ata36_home';
   static const String ata36_presentation = '/ata36_presentation';
@@ -51,4 +53,13 @@ class Routes {
   static const String ata21_press_ecam = '/ata21_press_ecam';
   static const String ata21_press_mcdu = '/ata21_press_mcdu';
   static const String ata21_press_loca = '/ata21_press_loca';
+
+  //--ATA 29--
+  static const String ata29_home = '/ata29_home';
+  static const String ata29_present = '/ata29_present';
+  static const String ata29_controlpanel = '/ata29_controlpanel';
+  static const String ata29_ecam = '/ata29_ecam';
+  static const String ata29_elecpum_loca = '/ata29_elecpum_loca';
+  static const String ata29_enginepum_loca = '/ata29_enginepum_loca';
+  static const String ata29_servicepanel_loca = '/ata29_servicepanel_loca';
 }

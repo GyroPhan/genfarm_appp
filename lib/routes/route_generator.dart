@@ -31,6 +31,13 @@ import 'package:genfarm_appp/screens/ata21/ata21_vent_menu_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_vent_present_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_aircondi_zonetempregusyst_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_aircondi_zonetempregusystenhan_screen.dart';
+import 'package:genfarm_appp/screens/ata29/ata29_controlpanel_screen.dart';
+import 'package:genfarm_appp/screens/ata29/ata29_ecam_screen.dart';
+import 'package:genfarm_appp/screens/ata29/ata29_home_screen.dart';
+import 'package:genfarm_appp/screens/ata29/ata29_elecpum_loca_screen.dart';
+import 'package:genfarm_appp/screens/ata29/ata29_enginepum_screen.dart';
+import 'package:genfarm_appp/screens/ata29/ata29_present_screen.dart';
+import 'package:genfarm_appp/screens/ata29/ata29_servicepanel_loca_screen.dart';
 import 'package:genfarm_appp/screens/ata36/ata36_mcdu_screen.dart';
 import 'package:genfarm_appp/screens/ata36/ata36_controlpanel_screen.dart';
 import 'package:genfarm_appp/screens/ata36/ata36_ecam_screen.dart';
@@ -96,6 +103,7 @@ Route<Object>? generateRoute(RouteSettings settings) {
     case Routes.ata36_othercomploca:
       return _buildRoute(
           settings: settings, screen: Ata36OtherCompLocaScreen());
+
 //--ATA 21--
     case Routes.ata21_home:
       return _buildRoute(settings: settings, screen: Ata21HomeScreen());
@@ -172,6 +180,24 @@ Route<Object>? generateRoute(RouteSettings settings) {
       return _buildRoute(settings: settings, screen: Ata21PressMcduScreen());
     case Routes.ata21_press_loca:
       return _buildRoute(settings: settings, screen: Ata21PressLocaScreen());
+
+//--ATA 29--
+    case Routes.ata29_home:
+      return _buildRoute(settings: settings, screen: Ata29HomeScreen());
+    case Routes.ata29_present:
+      return _buildRoute(settings: settings, screen: Ata29PresentScreen());
+    case Routes.ata29_controlpanel:
+      return _buildRoute(settings: settings, screen: Ata29ControlPanelScreen());
+    case Routes.ata29_ecam:
+      return _buildRoute(settings: settings, screen: Ata29EcamScreen());
+    case Routes.ata29_enginepum_loca:
+      return _buildRoute(settings: settings, screen: Ata29EnginePumScreen());
+    case Routes.ata29_elecpum_loca:
+      return _buildRoute(settings: settings, screen: Ata29ElecPumLocaScreen());
+    case Routes.ata29_servicepanel_loca:
+      return _buildRoute(
+          settings: settings, screen: Ata29ServicePanelLocaScreen());
+
 //-----------
     default:
       return _errorRoute();
