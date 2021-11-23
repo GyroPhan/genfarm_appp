@@ -62,4 +62,22 @@ class Routes {
   static const String ata29_elecpum_loca = '/ata29_elecpum_loca';
   static const String ata29_enginepum_loca = '/ata29_enginepum_loca';
   static const String ata29_servicepanel_loca = '/ata29_servicepanel_loca';
+
+  //--ATA 32--
+  static const String ata32_home = '/ata32_home';
+  static const String ata32_present = '/ata32_present';
+  static const String ata32_wheelbrake = '/ata32_wheelbrake';
+  static const String ata32_brakecontrol = '/ata32_brakecontrol';
+  static const String ata32_comp_loca = '/ata32_comp_loca';
+  static const String ata32_gearcontrol = '/ata32_gearcontrol';
+  static const String ata32_ecam = '/ata32_ecam';
+  static const String ata32_extenretract = '/ata32_extenretract';
+  static const String ata32_ldgdoor = '/ata32_ldgdoor';
+  static const String ata32_normparkbrake = '/ata32_normparkbrake';
+  static const String ata32_normparkbrake_enhance =
+      '/ata32_normparkbrake_enhance';
+  static const String ata32_steercontrol = '/ata32_steercontrol';
+  static const String ata32_steering = '/ata32_steering';
+  static const String ata32_gear_loca = '/ata32_gear_loca';
+  static const String ata32_wheelbrake_loca = '/ata32_wheelbrake_loca';
 }

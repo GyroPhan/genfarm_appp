@@ -9,13 +9,13 @@ import 'package:genfarm_appp/routes/routes.dart';
 
 import '../../constants.dart';
 
-class Ata32PresentScreen extends StatelessWidget {
-  const Ata32PresentScreen({Key? key}) : super(key: key);
+class Ata32BrakeControlScreen extends StatelessWidget {
+  const Ata32BrakeControlScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBarCus(context, title: '32 - Landing Gear Presentation'),
+      appBar: buildAppBarCus(context, title: '32 - Brakes Control Panel'),
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
@@ -23,19 +23,19 @@ class Ata32PresentScreen extends StatelessWidget {
         child: Column(
           children: [
             const ImageCusWid(
-              url: "assets/images/ata_32/ata32_present.png",
+              url: "assets/images/ata_32/ata32_brakecontrol.png",
             ),
             const InfoListWid(
               children: [
-                CusText(text: 'Landing Gear Presentation'),
+                CusText(text: 'Brakes Control Panel'),
                 CusText(
                     text:
-                        'The A320 aircraft family has a LH and RH dual wheel Main Landing Gear (MLG) and a dual wheel Nose Landing Gear (NLG).\nThe MLG retracts inboard into the MLG wheel well and the NLG retracts forward into the NLG wheel well. The Landing Gears (L/Gs) are hydraulically operated and electrically controlled. Each L/G has hydraulically and mechanically operated doors. Each L/G has a shock absorber.')
+                        'Cockpit panel location:\n _Triple pressure indicator for brake accumulator pressure and alternate/parking brake pressure,\n _Parking brake selector,\n _Rudder/brake pedals.')
               ],
             ),
             NavigationBarWid(
               route: () {
-                NavigationService.push(Routes.ata32_ldgdoor);
+                NavigationService.push(Routes.ata32_steercontrol);
               },
             )
           ],

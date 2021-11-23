@@ -38,6 +38,21 @@ import 'package:genfarm_appp/screens/ata29/ata29_elecpum_loca_screen.dart';
 import 'package:genfarm_appp/screens/ata29/ata29_enginepum_screen.dart';
 import 'package:genfarm_appp/screens/ata29/ata29_present_screen.dart';
 import 'package:genfarm_appp/screens/ata29/ata29_servicepanel_loca_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_brakecontrol_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_comp_loca_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_gear_loca_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_gearcontrolpanel_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_ecam_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_extenretract_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_home_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_ldgdoor_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_normparkbrake_enhance_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_normparkbrake_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_present_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_steercontrol_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_steering_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_wheelbrake_loca_screen.dart';
+import 'package:genfarm_appp/screens/ata32/ata32_wheelbrake_screen.dart';
 import 'package:genfarm_appp/screens/ata36/ata36_mcdu_screen.dart';
 import 'package:genfarm_appp/screens/ata36/ata36_controlpanel_screen.dart';
 import 'package:genfarm_appp/screens/ata36/ata36_ecam_screen.dart';
@@ -198,6 +213,41 @@ Route<Object>? generateRoute(RouteSettings settings) {
       return _buildRoute(
           settings: settings, screen: Ata29ServicePanelLocaScreen());
 
+//-- ATA 32--
+    case Routes.ata32_home:
+      return _buildRoute(settings: settings, screen: Ata32HomeScreen());
+    case Routes.ata32_present:
+      return _buildRoute(settings: settings, screen: Ata32PresentScreen());
+    case Routes.ata32_brakecontrol:
+      return _buildRoute(settings: settings, screen: Ata32BrakeControlScreen());
+    case Routes.ata32_comp_loca:
+      return _buildRoute(settings: settings, screen: Ata32CompLocaScreen());
+    case Routes.ata32_gearcontrol:
+      return _buildRoute(
+          settings: settings, screen: Ata32GearControlPanelScreen());
+    case Routes.ata32_ecam:
+      return _buildRoute(settings: settings, screen: Ata32EcamScreen());
+    case Routes.ata32_extenretract:
+      return _buildRoute(settings: settings, screen: Ata32ExtenRetractScreen());
+    case Routes.ata32_ldgdoor:
+      return _buildRoute(settings: settings, screen: Ata32LDGDoorScreen());
+    case Routes.ata32_normparkbrake:
+      return _buildRoute(
+          settings: settings, screen: Ata32NormParkBrakeScreen());
+    case Routes.ata32_normparkbrake_enhance:
+      return _buildRoute(
+          settings: settings, screen: Ata32NormParkBrakeEnhanceScreen());
+    case Routes.ata32_steercontrol:
+      return _buildRoute(settings: settings, screen: Ata32SteerControlScreen());
+    case Routes.ata32_steering:
+      return _buildRoute(settings: settings, screen: Ata32SteeringScreen());
+    case Routes.ata32_wheelbrake:
+      return _buildRoute(settings: settings, screen: Ata32WheelBrakeScreen());
+    case Routes.ata32_gear_loca:
+      return _buildRoute(settings: settings, screen: Ata32GearLocaScreen());
+    case Routes.ata32_wheelbrake_loca:
+      return _buildRoute(
+          settings: settings, screen: Ata32WheelBrakeLocaScreen());
 //-----------
     default:
       return _errorRoute();

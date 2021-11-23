@@ -5,4 +5,5 @@ List<Ata> ataList = [
   Ata(title: '36 - PNEUMATIC', route: Routes.ata36_home),
   Ata(title: '21 - AIR CONDITION', route: Routes.ata21_home),
   Ata(title: '29 - HYDRAULIC POWER', route: Routes.ata29_home),
+  Ata(title: '32 - LANDING GEAR', route: Routes.ata32_home),
 ];

@@ -14,7 +14,7 @@ class Ata29HomeScreen extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
-      appBar: buildAppBarCus(context, title: 'HYDRAULIC POWER'),
+      appBar: buildAppBarCus(context, title: '29 - HYDRAULIC POWER'),
       body: Container(
           width: width,
           height: height,

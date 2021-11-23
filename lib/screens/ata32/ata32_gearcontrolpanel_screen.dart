@@ -9,13 +9,13 @@ import 'package:genfarm_appp/routes/routes.dart';
 
 import '../../constants.dart';
 
-class Ata32PresentScreen extends StatelessWidget {
-  const Ata32PresentScreen({Key? key}) : super(key: key);
+class Ata32GearControlPanelScreen extends StatelessWidget {
+  const Ata32GearControlPanelScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBarCus(context, title: '32 - Landing Gear Presentation'),
+      appBar: buildAppBarCus(context, title: '32 - Gears Control Panel'),
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
@@ -23,19 +23,19 @@ class Ata32PresentScreen extends StatelessWidget {
         child: Column(
           children: [
             const ImageCusWid(
-              url: "assets/images/ata_32/ata32_present.png",
+              url: "assets/images/ata_32/ata32_gearcontrol.png",
             ),
             const InfoListWid(
               children: [
-                CusText(text: 'Landing Gear Presentation'),
+                CusText(text: 'Gears Control Panels'),
                 CusText(
                     text:
-                        'The A320 aircraft family has a LH and RH dual wheel Main Landing Gear (MLG) and a dual wheel Nose Landing Gear (NLG).\nThe MLG retracts inboard into the MLG wheel well and the NLG retracts forward into the NLG wheel well. The Landing Gears (L/Gs) are hydraulically operated and electrically controlled. Each L/G has hydraulically and mechanically operated doors. Each L/G has a shock absorber.')
+                        'Cockpit panel location:\n _L/G control lever,\n _L/G gravity extension handle,\n _L/G panel which includes:\n _L/G position indication panel,\n _Auto brake mode selection panel,\n _Brake fan indication/selection panel\n _A/SKID & N/W STeeRinG selector.\n _ECAM WHEEL page.')
               ],
             ),
             NavigationBarWid(
               route: () {
-                NavigationService.push(Routes.ata32_ldgdoor);
+                NavigationService.push(Routes.ata32_brakecontrol);
               },
             )
           ],
