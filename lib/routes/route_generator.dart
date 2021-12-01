@@ -31,6 +31,39 @@ import 'package:genfarm_appp/screens/ata21/ata21_vent_menu_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_vent_present_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_aircondi_zonetempregusyst_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_aircondi_zonetempregusystenhan_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_abnormal_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_batonly_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_comploca_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_complocaenhance_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_controlpanel_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_ecam_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_ecamenhance_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_emergency_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_externalloca_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_genloca_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_home_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_invertloca_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_maintloca_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_mcdu_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_mcduenhance_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_present_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_ratloca_screen.dart';
+import 'package:genfarm_appp/screens/ata24/ata24_trloca_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_actuatorthsloca_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_actuatorwingloca_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_comploca_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_controlarchitech_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_controllaw_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_controllever_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_controlpanel_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_ecam_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_ecamenhance_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_flybywire_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_home_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_mcdu_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_mechanicbackup_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_present_screen.dart';
+import 'package:genfarm_appp/screens/ata27/ata27_slatflap_screen.dart';
 import 'package:genfarm_appp/screens/ata29/ata29_controlpanel_screen.dart';
 import 'package:genfarm_appp/screens/ata29/ata29_ecam_screen.dart';
 import 'package:genfarm_appp/screens/ata29/ata29_home_screen.dart';
@@ -248,6 +281,81 @@ Route<Object>? generateRoute(RouteSettings settings) {
     case Routes.ata32_wheelbrake_loca:
       return _buildRoute(
           settings: settings, screen: Ata32WheelBrakeLocaScreen());
+
+//ATA 27--
+    case Routes.ata27_actuatorthsloca:
+      return _buildRoute(
+          settings: settings, screen: Ata27ActuatorThsLocaScreen());
+    case Routes.ata27_actuatorwingloca:
+      return _buildRoute(
+          settings: settings, screen: Ata27ActuatorWingLocaScreen());
+    case Routes.ata27_comploca:
+      return _buildRoute(settings: settings, screen: Ata27CompLocaScreen());
+    case Routes.ata27_controlarchitech:
+      return _buildRoute(
+          settings: settings, screen: Ata27ControlArchitechScreen());
+    case Routes.ata27_controllaw:
+      return _buildRoute(settings: settings, screen: Ata27ControlLawScreen());
+    case Routes.ata27_controllever:
+      return _buildRoute(settings: settings, screen: Ata27ControlLeverScreen());
+    case Routes.ata27_controlpanel:
+      return _buildRoute(settings: settings, screen: Ata27ControlPanelScreen());
+    case Routes.ata27_ecam:
+      return _buildRoute(settings: settings, screen: Ata27EcamScreen());
+    case Routes.ata27_ecam_enhance:
+      return _buildRoute(settings: settings, screen: Ata27EcamEnhanceScreen());
+    case Routes.ata27_flybywire:
+      return _buildRoute(settings: settings, screen: Ata27FlyByWireScreen());
+    case Routes.ata27_home:
+      return _buildRoute(settings: settings, screen: Ata27HomeScreen());
+    case Routes.ata27_mcdu:
+      return _buildRoute(settings: settings, screen: Ata27McduScreen());
+    case Routes.ata27_mechanicbackup:
+      return _buildRoute(
+          settings: settings, screen: Ata27MechanicBackUpScreen());
+    case Routes.ata27_present:
+      return _buildRoute(settings: settings, screen: Ata27PresentScreen());
+    case Routes.ata27_slatflap:
+      return _buildRoute(settings: settings, screen: Ata27SlatFlapScreen());
+
+//--ATA 24--
+    case Routes.ata24_abnormal:
+      return _buildRoute(settings: settings, screen: Ata24AbNormalScreen());
+    case Routes.ata24_batonly:
+      return _buildRoute(settings: settings, screen: Ata24BatOnlyScreen());
+    case Routes.ata24_comploca:
+      return _buildRoute(settings: settings, screen: Ata24CompLocaScreen());
+    case Routes.ata24_complocaenhance:
+      return _buildRoute(
+          settings: settings, screen: Ata24CompLocaEnhanceScreen());
+    case Routes.ata24_controlpanel:
+      return _buildRoute(settings: settings, screen: Ata24ControlPanelScreen());
+    case Routes.ata24_ecam:
+      return _buildRoute(settings: settings, screen: Ata24EcamScreen());
+    case Routes.ata24_ecamenhance:
+      return _buildRoute(settings: settings, screen: Ata24EcamEnhanceScreen());
+    case Routes.ata24_emergency:
+      return _buildRoute(settings: settings, screen: Ata24EmergencyScreen());
+    case Routes.ata24_externalloca:
+      return _buildRoute(settings: settings, screen: Ata24ExternalLocaScreen());
+    case Routes.ata24_genloca:
+      return _buildRoute(settings: settings, screen: Ata24GenLocaScreen());
+    case Routes.ata24_home:
+      return _buildRoute(settings: settings, screen: Ata24HomeScreen());
+    case Routes.ata24_invertloca:
+      return _buildRoute(settings: settings, screen: Ata24InvertLocaScreen());
+    case Routes.ata24_maintloca:
+      return _buildRoute(settings: settings, screen: Ata24MaintLocaScreen());
+    case Routes.ata24_mcdu:
+      return _buildRoute(settings: settings, screen: Ata24McduScreen());
+    case Routes.ata24_mcduenhance:
+      return _buildRoute(settings: settings, screen: Ata24McduEnhanceScreen());
+    case Routes.ata24_present:
+      return _buildRoute(settings: settings, screen: Ata24PresentScreen());
+    case Routes.ata24_ratloca:
+      return _buildRoute(settings: settings, screen: Ata24RatLocaScreen());
+    case Routes.ata24_trloca:
+      return _buildRoute(settings: settings, screen: Ata24TrLocaScreen());
 //-----------
     default:
       return _errorRoute();

@@ -80,4 +80,41 @@ class Routes {
   static const String ata32_steering = '/ata32_steering';
   static const String ata32_gear_loca = '/ata32_gear_loca';
   static const String ata32_wheelbrake_loca = '/ata32_wheelbrake_loca';
+
+//--ATA 27--
+  static const String ata27_present = '/ata27_present';
+  static const String ata27_actuatorthsloca = '/ata27_actuatorthsloca';
+  static const String ata27_actuatorwingloca = '/ata27_actuatorwingloca';
+  static const String ata27_comploca = '/ata27_comploca';
+  static const String ata27_controlarchitech = '/ata27_controlarchitech';
+  static const String ata27_controllaw = '/ata27_controllaw';
+  static const String ata27_controllever = '/ata27_controllever';
+  static const String ata27_controlpanel = '/ata27_controlpanel';
+  static const String ata27_ecam = '/ata27_ecam';
+  static const String ata27_ecam_enhance = '/ata27_ecam_enhance';
+  static const String ata27_flybywire = '/ata27_flybywire';
+  static const String ata27_home = '/ata27_home';
+  static const String ata27_mcdu = '/ata27_mcdu';
+  static const String ata27_mechanicbackup = '/ata27_mechanicbackup';
+  static const String ata27_slatflap = '/ata27_slatflap';
+
+//--ATA 24--
+  static const String ata24_abnormal = '/ata24_abnormal';
+  static const String ata24_batonly = '/ata24_batonly';
+  static const String ata24_comploca = '/ata24_comploca';
+  static const String ata24_complocaenhance = '/ata24_complocaenhance';
+  static const String ata24_controlpanel = '/ata24_controlpanel';
+  static const String ata24_ecam = '/ata24_ecam';
+  static const String ata24_ecamenhance = '/ata24_ecamenhance';
+  static const String ata24_emergency = '/ata24_emergency';
+  static const String ata24_externalloca = '/ata24_externalloca';
+  static const String ata24_genloca = '/ata24_genloca';
+  static const String ata24_home = '/ata24_home';
+  static const String ata24_invertloca = '/ata24_invertloca';
+  static const String ata24_maintloca = '/ata24_maintloca';
+  static const String ata24_mcdu = '/ata24_mcdu';
+  static const String ata24_mcduenhance = '/ata24_mcduenhance';
+  static const String ata24_present = '/ata24_present';
+  static const String ata24_ratloca = '/ata24_ratloca';
+  static const String ata24_trloca = '/ata24_trloca';
 }
