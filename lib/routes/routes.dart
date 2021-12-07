@@ -117,4 +117,21 @@ class Routes {
   static const String ata24_present = '/ata24_present';
   static const String ata24_ratloca = '/ata24_ratloca';
   static const String ata24_trloca = '/ata24_trloca';
+//--ATA 22--
+  static const String ata22_augmention = '/ata22_augmention';
+  static const String ata22_autopilot = '/ata22_autopilot';
+  static const String ata22_autothrust = '/ata22_autothrust';
+  static const String ata22_comploca = '/ata22_comploca';
+  static const String ata22_efisdisplay = '/ata22_efisdisplay';
+  static const String ata22_fcu = '/ata22_fcu';
+  static const String ata22_flightcontrolpanel = '/ata22_flightcontrolpanel';
+  static const String ata22_fmgc = '/ata22_fmgc';
+  static const String ata22_home = '/ata22_home';
+  static const String ata22_mcdu2 = '/ata22_mcdu2';
+  static const String ata22_mcdu = '/ata22_mcdu';
+  static const String ata22_present2 = '/ata22_present2';
+  static const String ata22_present = '/ata22_present';
+  static const String ata22_primarydisplay = '/ata22_primarydisplay';
+  static const String ata22_sidestick = '/ata22_sidestick';
+  static const String ata22_thrustlever = '/ata22_thrustlever';
 }

@@ -68,6 +68,7 @@ flutter:
     - assets/images/ata_32/
     - assets/images/ata_27/
     - assets/images/ata_24/
+    - assets/images/ata_22/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

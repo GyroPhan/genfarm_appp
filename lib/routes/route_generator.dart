@@ -31,6 +31,22 @@ import 'package:genfarm_appp/screens/ata21/ata21_vent_menu_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_vent_present_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_aircondi_zonetempregusyst_screen.dart';
 import 'package:genfarm_appp/screens/ata21/ata21_aircondi_zonetempregusystenhan_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_augmention_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_autopilot_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_autothrust_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_comploca_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_efisdisplay_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_fcu_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_flightcontrolpanel_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_fmgc_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_home_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_mcdu2_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_mcdu_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_present2_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_present_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_primarydisplay_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_sidestick_screen.dart';
+import 'package:genfarm_appp/screens/ata22/ata22_thrustlever_screen.dart';
 import 'package:genfarm_appp/screens/ata24/ata24_abnormal_screen.dart';
 import 'package:genfarm_appp/screens/ata24/ata24_batonly_screen.dart';
 import 'package:genfarm_appp/screens/ata24/ata24_comploca_screen.dart';
@@ -356,6 +372,41 @@ Route<Object>? generateRoute(RouteSettings settings) {
       return _buildRoute(settings: settings, screen: Ata24RatLocaScreen());
     case Routes.ata24_trloca:
       return _buildRoute(settings: settings, screen: Ata24TrLocaScreen());
+//--ATA 22--
+    case Routes.ata22_augmention:
+      return _buildRoute(settings: settings, screen: Ata22AugmentionScreen());
+    case Routes.ata22_autopilot:
+      return _buildRoute(settings: settings, screen: Ata22AutoPilotScreen());
+    case Routes.ata22_autothrust:
+      return _buildRoute(settings: settings, screen: Ata22AutoThrustScreen());
+    case Routes.ata22_comploca:
+      return _buildRoute(settings: settings, screen: Ata22CompLocaScreen());
+    case Routes.ata22_efisdisplay:
+      return _buildRoute(settings: settings, screen: Ata22EfisDisplayScreen());
+    case Routes.ata22_fcu:
+      return _buildRoute(settings: settings, screen: Ata22FcuScreen());
+    case Routes.ata22_flightcontrolpanel:
+      return _buildRoute(
+          settings: settings, screen: Ata22FlightControlPanelScreen());
+    case Routes.ata22_fmgc:
+      return _buildRoute(settings: settings, screen: Ata22FmgcScreen());
+    case Routes.ata22_home:
+      return _buildRoute(settings: settings, screen: Ata22HomeScreen());
+    case Routes.ata22_mcdu2:
+      return _buildRoute(settings: settings, screen: Ata22Mcdu2Screen());
+    case Routes.ata22_mcdu:
+      return _buildRoute(settings: settings, screen: Ata22McduScreen());
+    case Routes.ata22_present2:
+      return _buildRoute(settings: settings, screen: Ata22Present2Screen());
+    case Routes.ata22_present:
+      return _buildRoute(settings: settings, screen: Ata22PresentScreen());
+    case Routes.ata22_primarydisplay:
+      return _buildRoute(
+          settings: settings, screen: Ata22PrimaryDisplayScreen());
+    case Routes.ata22_sidestick:
+      return _buildRoute(settings: settings, screen: Ata22SideStickScreen());
+    case Routes.ata22_thrustlever:
+      return _buildRoute(settings: settings, screen: Ata22ThurstLeverScreen());
 //-----------
     default:
       return _errorRoute();
